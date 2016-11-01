@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Itim', cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+body {
+  background-image: url("http://www.designrazor.net/wp-content/uploads/2015/01/pure-css3-animation-effects7.jpg");
+  background-size: 100%;
+}
+
+p  {
+  font-family: 'Itim', cursive;
+  font-size: 20px;
+}
