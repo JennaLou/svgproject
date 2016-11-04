@@ -8,15 +8,26 @@
     <title>SVG Animation</title>
   </head>
   <body>
-    <svg width="100%" viewBox="0 0 100 48"xlink:href="http://www.designrazor.net/wp-content/uploads/2015/01/pure-css3-animation-effects7.jpg">
-        <rect x="0" y="33" width="200" height="17" fill="lightskyblue"/>
-        <image x="10" y="17" width="20" height="20" xlink:href="http://i.b5z.net/i/ui/4002122/i/1GIFS/goldenretdog1zzz.gif">
-        <animate attributeName="x"  from="10" to="180" dur="10" begin="click"/>
+    <svg width="100%" viewBox="0 0 100 48"xlink:href="http://images.clipartpanda.com/background-clipart-HzeN8sS.png">
+        <rect x="0" y="33" width="200" height="17" fill="skyblue"/>
+        <image x="0" y="17" width="20" height="20" xlink:href="http://i.b5z.net/i/ui/4002122/i/1GIFS/goldenretdog1zzz.gif">
+        <animate attributeName="x"  from="0" to="100" dur="20" begin="click"/>
+
         </image>
-    <circle cx="5" cy="5" r="5" fill="yellow">
-      <animate attributeName = "cx" from = "10" to = "190" dur = "25s" repeatcount="indefinite"/>
-    </circle>
+        /***********************************************
+                            SUN
+        ************************************************/
+    <image xlink:href="http://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Sun-and-Moon-PNG/Sun_Transparent_PNG_Clip_Art_Image.png?m=1447313226" x="0" y="0" width="20" height="20" opacity="1">
+       <animate id="sun" attributeName="x" from="0" to="100" dur="30"/>
+     </image>
+    /***********************************************
+                        TREE
+    ************************************************/
        <polygon points="100,0 90,15 95,15 85,30 90,30 80,45 120,45 110,30 115,30 105,15 110,15" fill="green"/>
+
+       /***********************************************
+                          SNOW
+       ************************************************/
        <circle cx="10" cy="2" r="2" fill="white">
     <animate attributeName="cy" from="3" to="50" dur="8s" begin="click" fill="freeze"/>
   </circle>
@@ -44,7 +55,19 @@
 <circle cx="90" cy="2" r="2" fill="white">
 <animate attributeName="cy" from="3" to="50" dur="8s" begin="click" fill="freeze"/>
 </circle>
+/***********************************************
+                  BIRD
+************************************************/
+<rect x="0" y="0" width="5" height="5" fill="brown">
+    <animate id="first" attributeName="x" from="0" to="185" dur="20" fill="freeze" begin="click"/>
+    <animate id="two" attributeName="y" from="0" to="35" dur="4" fill="freeze" begin="first.end"/>
+    <animate attributeName="x" from="185" to="0" dur="5" begin="two.end" fill="freeze"/>
+    <animate attributeName="y" from="35" to="0" dur="5" begin="two.end" fill="freeze"/>
+  </rect>
 
+  <polygon points="120 10 150 20 120 30" fill="gray">
+     <animate attributeName="opacity" from="1" to="0" dur="4"/>
+   </polygon>
 </svg>
     </svg>
 
